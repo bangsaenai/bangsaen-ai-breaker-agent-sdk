@@ -16,7 +16,7 @@ You don't need heavy local models or complex setup. Intercept malicious inputs v
 ```python
 import requests
 
-BREAKER_ENDPOINT = "https:/bangsaen-ai-breaker-653731256449.asia-southeast1.run.app"
+BREAKER_ENDPOINT = "https://bangsaen-ai-breaker-653731256449.asia-southeast1.run.app/v1/intercept"
 
 def check_agent_safety(session_id: str, prompt: str) -> dict:
     """Interceptors user prompt via Bangsaen AI Breaker Gateway."""
@@ -36,7 +36,7 @@ def check_agent_safety(session_id: str, prompt: str) -> dict:
 💛 Node.js / JavaScript 
 
 ``` 
-const BREAKER_ENDPOINT = "https:/bangsaen-ai-breaker-653731256449.asia-southeast1.run.app";
+const BREAKER_ENDPOINT = "https://bangsaen-ai-breaker-653731256449.asia-southeast1.run.app/v1/intercept";
 
 async function checkAgentSafety(sessionId, prompt) {
     const res = await fetch(BREAKER_ENDPOINT, {
